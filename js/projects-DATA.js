@@ -3,7 +3,7 @@
 export var cellModalData = [
     // ------------------------------------------------------------------
     {
-        imageUrl: 'content/file1/pictures/animation.gif',
+        imageUrl: 'content/uvrobot/pictures/animation.gif',
         projectName: 'Bica',
         extraContent: 'Is a small mobile robot that has 3 modes of operation: manual, solve maze and accelerometer control.',
         mdFile: 'content/file1/readme.md',

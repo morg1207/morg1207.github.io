@@ -1,35 +1,55 @@
 <!DOCTYPE html>
+<html lang="es">
 
 <head>
-    <title>Brayan Laura - Portafolio</title>
-    <!-- Bulma -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brayan Laura - Robotics Portfolio</title>
+    
+    <!-- Bulma CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
-    <!-- my icons from fontawesome: https://fontawesome.com/search?o=r&m=free -->
+    
+    <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/ddd952fabc.js" crossorigin="anonymous"></script>
-    <link rel="icon" href="icon/my_icon.ico" type="image/x-icon">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- Include the .js file -->
-    <script type="module" src="js/portafolio.js"></script>
-    <!-- a lorem ipsum generator -->
-    <!-- https://www.loremipzum.com/en/text-generator -->
-    <!-- include .css styles -->
+    
+    <!-- AOS Library for scroll animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom CSS (Modular) -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
     <link rel="stylesheet" href="css/custom_style.css">
     <link rel="stylesheet" href="css/timeline.css">
     <link rel="stylesheet" href="css/devices.css">
-    <!-- Load the element from .md files -->
+    
+    <link rel="icon" href="icon/my_icon.ico" type="image/x-icon">
+    <script type="module" src="js/portafolio.js"></script>
     <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
 </head>
 
 <body>
+    <!-- Theme Switcher -->
+    <div class="theme-switcher" id="theme-switcher">
+        <i class="fas fa-moon"></i>
+    </div>
 
     <!-- divide the space in 2 sides for my portafolio -->
-    <div class="columns is-multiline">
-
+    <div class="columns is-multiline is-gapless">
 
         <!-- first column -->
-        <div class="column is-3-desktop is-12-mobile has-text-centered">
-            <div class="block py-4 pl-4" style="position: sticky; top: 0;">
+        <div class="column is-3-desktop is-12-tablet is-12-mobile has-text-centered">
+            <div class="block py-5 pl-5 profile-sidebar">
                 <div class="card">
                     <div class="card-content">
                         <div id="profileContainer">
@@ -41,26 +61,23 @@
         </div>
         <!-- end of 1st column -->
 
-
         <!-- second column -->
-        <div class="column is-9-desktop is-12-mobile">
-            <div class="block py-4 pr-4">
+        <div class="column is-9-desktop is-12-tablet is-12-mobile">
+            <div class="block py-5 pr-5 main-content">
                 <div class="card">
                     <div class="card-content">
 
                         <!-- create tabs: about, resume, portafolio -->
                         <div class="tabs is-centered is-boxed">
                             <ul>
-                                <li data-target="pane-1"><a class="is-size-4">About</a></li>
-                                <li data-target="pane-2"><a class="is-size-4">Resume</a></li>
-                                <li class="is-active" data-target="pane-3"><a class="is-size-4">Portafolio</a></li>
+                                <li data-target="pane-1"><a class="is-size-5"><i class="fas fa-user me-2"></i>About</a></li>
+                                <li data-target="pane-2"><a class="is-size-5"><i class="fas fa-file-alt me-2"></i>Resume</a></li>
+                                <li class="is-active" data-target="pane-3"><a class="is-size-5"><i class="fas fa-briefcase me-2"></i>Portfolio</a></li>
                             </ul>
                         </div>
 
-
                         <!-- create content for each tab -->
                         <div class="tab-content">
-
 
                             <!-- tab 1 -->
                             <div class="tab-pane" id="pane-1" style="display: none;">
@@ -72,10 +89,8 @@
                             </div>
                             <!-- end of tab 1 -->
 
-
                             <!-- tab 2 -->
                             <div class="tab-pane" id="pane-2" style="display: none;">
-                                <!-- https://www.w3schools.com/howto/howto_css_timeline.asp -->
                                 <div class="block">
                                     <div id="resumeContainer">
                                         <!-- Resume will be loaded here!!! EYE -->
@@ -84,19 +99,22 @@
                             </div>
                             <!-- end of tab 2 -->
 
-
                             <!-- tab 3 -->
-                            <!-- <div class="tab-pane" id="pane-3"> -->
                             <div class="tab-pane" id="pane-3">
                                 <div class="block">
-                                    <nav class="pagination" role="navigation" aria-label="pagination">
-                                        <a class="pagination-previous" id="prev-page">Previous</a>
-                                        <a class="pagination-next" id="next-page">Next page</a>
+                                    <nav class="pagination is-centered" role="navigation" aria-label="pagination">
+                                        <a class="pagination-previous" id="prev-page">
+                                            <i class="fas fa-chevron-left me-2"></i> Previous
+                                        </a>
+                                        <a class="pagination-next" id="next-page">
+                                            Next <i class="fas fa-chevron-right ms-2"></i>
+                                        </a>
                                         <ul class="pagination-list" id="pagination-list">
                                             <!-- The page numbers will be inserted here -->
                                         </ul>
                                     </nav>
-                                    <div class="fixed-grid has-2-cols">
+                                    
+                                    <div class="fixed-grid has-2-cols has-1-cols-mobile">
                                         <div id="modal-container" class="grid">
                                             <!-- The modals will be inserted here!!! EYE -->
                                         </div>
@@ -104,7 +122,6 @@
                                 </div>
                             </div>
                             <!-- end of tab 3 -->
-
 
                         </div>
                         <!-- end content of each tab-->
@@ -124,7 +141,9 @@
     <script src="js/loadAbout.js"></script>
     <script src="js/loadResume.js"></script>
     <script src="js/timelineToggle.js"></script>
-
+    
+    <!-- Main Script -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>

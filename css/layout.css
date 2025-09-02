@@ -1,0 +1,51 @@
+/* Estructura y disposición */
+.columns.is-gapless {
+    margin: 0;
+}
+
+.profile-sidebar {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.main-content {
+    min-height: 100vh;
+}
+
+.fixed-grid {
+    margin-top: 1.5rem;
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+/* Espaciado y márgenes */
+.block {
+    margin-bottom: 1.5rem;
+}
+
+.py-5 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.pl-5, .pr-5 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+@media (max-width: 768px) {
+    .pl-5, .pr-5 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .py-5 {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+}
