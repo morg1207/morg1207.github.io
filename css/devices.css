@@ -1,0 +1,51 @@
+/* This CSS ensures that the columns maintain their
+specified widths (25% and 75% respectively) on desktop,
+and take up the full width on screens smaller than 1024px
+(which is the breakpoint for mobile in Bulma). The flex:
+none; rule prevents the columns from growing or shrinking
+based on their content. */
+
+.column.is-3-desktop {
+    flex: none;
+    width: 25%;
+}
+
+.column.is-9-desktop {
+    flex: none;
+    width: 75%;
+}
+
+@media screen and (max-width: 1023px) {
+    .column.is-3-desktop, .column.is-9-desktop {
+        width: 100%;
+    }
+}
+
+/* this ensures that if the content in a tab is too wide
+for the container, a scrollbar will be added */
+
+/* .tab-pane {
+    overflow: auto;
+} */
+
+/* for adjusting the profile content when the screen
+is mobile-phone or desktop size */
+
+/* Mobile styles */
+@media screen and (max-width: 1023px) {
+    .desktop-presentation-card-vertical {
+        display: none;
+    }
+    .mobilePhone-presentation-card-horizontal {
+        display: block;
+    }
+}
+/* Desktop styles */
+@media screen and (min-width: 1023px) {
+    .desktop-presentation-card-vertical {
+        display: block;
+    }
+    .mobilePhone-presentation-card-horizontal {
+        display: none;
+    }
+}

@@ -1,0 +1,22 @@
+/* header colors */
+h1, h2, h3, h4, h5, h6 {
+    color: rgb(255, 255, 255) !important;
+}
+
+/* normal text color */
+p, * {
+    color: rgb(199, 198, 204) !important;
+}
+
+/* background color and text color of the .md file */
+body {
+    background-color: rgb(39, 38, 39) !important;
+}
+
+/* if text is inside code tag will have these color for its box and text */
+code {
+    color: rgb(255, 255, 255) !important;
+}
+pre {
+    background-color: rgb(32, 53, 122) !important;
+}

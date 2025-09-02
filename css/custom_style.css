@@ -1,0 +1,79 @@
+/* background */
+body {
+    background-color: #ffffff; /* Change the background color */
+}
+
+/* tabs */
+.tabs.is-centered.is-boxed ul li.is-active a {
+    color: #000000; /* Color for the active tab */
+    border-bottom-color: #000000; /* Color for the active tab's horizontal line */
+    background-color: #e0e0e0; /* Background color for the active tab */
+}
+.tabs.is-centered.is-boxed ul li:not(.is-active) a {
+    color: #000000; /* Color for inactive tabs */
+    border-bottom-color: #000000; /* Color for inactive tabs' horizontal line */
+}
+.tabs.is-centered.is-boxed ul li a:hover {
+    color: #23d160; /* Color for tabs on hover */
+    border-bottom-color: #23d160; /* Color for tabs' horizontal line on hover */
+    background-color: #000000; /* Background color for the active tab */
+}
+
+/* cards */
+.card {
+    background-color: #3b71a3; /* Change the background color */
+    border: 1px solid #08154d; /* Change the border color */
+}
+
+/* tags */
+.tag {
+    background-color: #6adae9d3; /* Background color for tags */
+    color: #000000d7; /* Text color for tags */
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+/* span: logos and text */
+span {
+    color: #ffffff; /* Change the text color */
+}
+
+/* titles */
+.title {
+    color: #000000ce; /* Change the text color */
+}
+
+/* subtitles */
+.subtitle {
+    color: rgb(0, 0, 0); /* Change the text color */
+}
+
+/* paragraph */
+p {
+    color: #ffffff; /* Change the text color */
+}
+.content {
+    color: #ffffff; /* Change the text color */
+}
+
+/* button */
+.button {
+    background-color: #e0e0e0; /* Change the background color */
+    border: 1px solid #ffdd57; /* Change the border color */
+}
+
+/* robot image size from tab1 */
+.img-size {
+    width:  180px;
+    height: 180px;
+}
+
+/* pagination number selected */
+.pagination-link.is-current {
+    color: #ffffff; /* Change the text color */
+    background-color: #000000ce; /* Change the background color */
+}
+.pagination-previous,.pagination-next {
+    color: #fff; /* Text color */
+    background-color: #08154d; /* Background color */
+}

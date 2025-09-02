@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Andrés Alamo - Portafolio</title>
+    <!-- Bulma -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+    <!-- my icons from fontawesome: https://fontawesome.com/search?o=r&m=free -->
+    <script src="https://kit.fontawesome.com/ddd952fabc.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="icon/my_icon.ico" type="image/x-icon">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Include the .js file -->
+    <script type="module" src="js/portafolio.js"></script>
+    <!-- a lorem ipsum generator -->
+    <!-- https://www.loremipzum.com/en/text-generator -->
+    <!-- include .css styles -->
+    <link rel="stylesheet" href="css/custom_style.css">
+    <link rel="stylesheet" href="css/timeline.css">
+    <link rel="stylesheet" href="css/devices.css">
+    <!-- Load the element from .md files -->
+    <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
+</head>
+
+<body>
+
+    <!-- divide the space in 2 sides for my portafolio -->
+    <div class="columns is-multiline">
+
+
+        <!-- first column -->
+        <div class="column is-3-desktop is-12-mobile has-text-centered">
+            <div class="block py-4 pl-4" style="position: sticky; top: 0;">
+                <div class="card">
+                    <div class="card-content">
+                        <div id="profileContainer">
+                            <!-- Profile will be loaded here!!! EYE -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of 1st column -->
+
+
+        <!-- second column -->
+        <div class="column is-9-desktop is-12-mobile">
+            <div class="block py-4 pr-4">
+                <div class="card">
+                    <div class="card-content">
+
+                        <!-- create tabs: about, resume, portafolio -->
+                        <div class="tabs is-centered is-boxed">
+                            <ul>
+                                <li data-target="pane-1"><a class="is-size-4">About</a></li>
+                                <li data-target="pane-2"><a class="is-size-4">Resume</a></li>
+                                <li class="is-active" data-target="pane-3"><a class="is-size-4">Portafolio</a></li>
+                            </ul>
+                        </div>
+
+
+                        <!-- create content for each tab -->
+                        <div class="tab-content">
+
+
+                            <!-- tab 1 -->
+                            <div class="tab-pane" id="pane-1" style="display: none;">
+                                <div class="block">
+                                    <div id="aboutContainer">
+                                        <!-- About will be loaded here!!! EYE -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end of tab 1 -->
+
+
+                            <!-- tab 2 -->
+                            <div class="tab-pane" id="pane-2" style="display: none;">
+                                <!-- https://www.w3schools.com/howto/howto_css_timeline.asp -->
+                                <div class="block">
+                                    <div id="resumeContainer">
+                                        <!-- Resume will be loaded here!!! EYE -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end of tab 2 -->
+
+
+                            <!-- tab 3 -->
+                            <!-- <div class="tab-pane" id="pane-3"> -->
+                            <div class="tab-pane" id="pane-3">
+                                <div class="block">
+                                    <nav class="pagination" role="navigation" aria-label="pagination">
+                                        <a class="pagination-previous" id="prev-page">Previous</a>
+                                        <a class="pagination-next" id="next-page">Next page</a>
+                                        <ul class="pagination-list" id="pagination-list">
+                                            <!-- The page numbers will be inserted here -->
+                                        </ul>
+                                    </nav>
+                                    <div class="fixed-grid has-2-cols">
+                                        <div id="modal-container" class="grid">
+                                            <!-- The modals will be inserted here!!! EYE -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end of tab 3 -->
+
+
+                        </div>
+                        <!-- end content of each tab-->
+                    </div>
+                    <!-- end card content-->
+                </div>
+                <!-- end card-->
+            </div>
+        </div>
+        <!-- end of 2nd column -->
+    </div>
+    <!-- end of columns -->
+
+    <!-- Load the Scripts!!! -->
+    <script src="js/loadProfile.js"></script>
+    <script src="js/tabs.js"></script>
+    <script src="js/loadAbout.js"></script>
+    <script src="js/loadResume.js"></script>
+    <script src="js/timelineToggle.js"></script>
+
+</body>
+
+</html>
