@@ -1,7 +1,7 @@
-# Leonardo Bot: Autonomous Interior Painting Robot
+# LeonardoBot — Autonomous Interior Painting Robot
 
 ## Project Overview
-Leonardo Bot is an innovative autonomous robot designed for automated interior painting. Equipped with a telescopic system for height adjustment and omnidirectional mobility, it can navigate complex indoor environments while performing painting tasks with precision.
+LeonardoBot is an autonomous robot for automated interior wall painting, developed for the construction startup **Smart Painter**. Equipped with a telescopic system for height adjustment and omnidirectional mobility, it can navigate complex indoor environments while performing painting tasks with precision.
 
 ## My Role: Autonomy and Simulation Lead
 I was responsible for the autonomy and simulation components of this project. My key contributions included:
@@ -26,7 +26,7 @@ I was responsible for the autonomy and simulation components of this project. My
 - Pre-programmed and customizable painting routines
 
 ## Implementation Status
-The project is currently in the implementation phase, with the simulation environment fully functional and real-world testing underway.
+The project is in development: the simulation in Gazebo Sim is fully functional, and the physical implementation is the next stage.
 
 ## Simulation Demo
 

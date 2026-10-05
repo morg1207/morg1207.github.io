@@ -1,149 +1,212 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brayan Laura - Robotics Portfolio</title>
-    
-    <!-- Bulma CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
-    
-    <!-- Font Awesome Icons -->
-    <script src="https://kit.fontawesome.com/ddd952fabc.js" crossorigin="anonymous"></script>
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    
-    <!-- AOS Library for scroll animations -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
-    <!-- Custom CSS (Modular) -->
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/components.css">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/dark-mode.css">
-    <link rel="stylesheet" href="css/custom_style.css">
-    <link rel="stylesheet" href="css/timeline.css">
-    <link rel="stylesheet" href="css/devices.css">
-    
-    <link rel="icon" href="icon/my_icon.ico" type="image/x-icon">
-    <script type="module" src="js/portafolio.js"></script>
-    <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brayan Laura — ROS 2 Robotics Engineer</title>
+  <meta name="description" content="Brayan Laura — ROS 2 robotics engineer. Autonomous mobile robots, Nav2, behavior trees, SLAM and simulation, from Gazebo to the real robot.">
+  <meta property="og:title" content="Brayan Laura — ROS 2 Robotics Engineer">
+  <meta property="og:description" content="Autonomous mobile robots: Nav2, behavior trees, SLAM and simulation — from Gazebo to the real robot.">
+  <meta property="og:image" content="https://morg1207.github.io/assets/img/forklift_real.jpg">
+  <link rel="icon" href="icon/my_icon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+  <script>
+    try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
 </head>
-
 <body>
-    <!-- Theme Switcher -->
-    <div class="theme-switcher" id="theme-switcher">
-        <i class="fas fa-moon"></i>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="#top" class="brand"><span class="brand-mark">BL</span><span class="brand-name">Brayan Laura</span></a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="theme-toggle" aria-label="Toggle light/dark theme">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.39 5.39 0 0 1-4.4 2.26 5.4 5.4 0 0 1-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"/></svg>
+      </button>
+      <a class="btn btn-primary btn-sm" href="assets/Brayan_Laura_CV.pdf" target="_blank" rel="noopener">CV</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-text">
+        <p class="eyebrow"><span class="dot"></span> ROS 2 Robotics Engineer · Peru · Open to remote</p>
+        <h1>I build autonomous mobile robots, <span class="accent">from simulation to the real world.</span></h1>
+        <p class="lead">
+          Mechatronics engineer with 5+ years developing robotics software on ROS 1 and ROS 2:
+          navigation with Nav2, behavior trees, SLAM, perception and Gazebo simulation — for logistics,
+          agriculture and construction robots. Founder of
+          <a href="https://kalmanrobotics.io" target="_blank" rel="noopener">Kalman Robotics</a>.
+        </p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#projects">See the robots</a>
+          <a class="btn btn-ghost" href="assets/Brayan_Laura_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+          <a class="icon-link" href="https://github.com/morg1207" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.4-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>
+          </a>
+          <a class="icon-link" href="https://www.linkedin.com/in/brayan-laura/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+          </a>
+        </div>
+      </div>
+      <figure class="hero-photo">
+        <img src="assets/img/brayan.jpg" alt="Brayan Laura holding a mobile robot at UNI, Lima" width="480" height="600">
+        <figcaption><span class="mono">~/brayan</span> at CTIC — UNI</figcaption>
+      </figure>
     </div>
 
-    <!-- divide the space in 2 sides for my portafolio -->
-    <div class="columns is-multiline is-gapless">
-
-        <!-- first column -->
-        <div class="column is-3-desktop is-12-tablet is-12-mobile has-text-centered">
-            <div class="block py-5 pl-5 profile-sidebar">
-                <div class="card">
-                    <div class="card-content">
-                        <div id="profileContainer">
-                            <!-- Profile will be loaded here!!! EYE -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- end of 1st column -->
-
-        <!-- second column -->
-        <div class="column is-9-desktop is-12-tablet is-12-mobile">
-            <div class="block py-5 pr-5 main-content">
-                <div class="card">
-                    <div class="card-content">
-
-                        <!-- create tabs: about, resume, portafolio -->
-                        <div class="tabs is-centered is-boxed">
-                            <ul>
-                                <li data-target="pane-1"><a class="is-size-5"><i class="fas fa-user me-2"></i>About</a></li>
-                                <li data-target="pane-2"><a class="is-size-5"><i class="fas fa-file-alt me-2"></i>Resume</a></li>
-                                <li class="is-active" data-target="pane-3"><a class="is-size-5"><i class="fas fa-briefcase me-2"></i>Portfolio</a></li>
-                            </ul>
-                        </div>
-
-                        <!-- create content for each tab -->
-                        <div class="tab-content">
-
-                            <!-- tab 1 -->
-                            <div class="tab-pane" id="pane-1" style="display: none;">
-                                <div class="block">
-                                    <div id="aboutContainer">
-                                        <!-- About will be loaded here!!! EYE -->
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end of tab 1 -->
-
-                            <!-- tab 2 -->
-                            <div class="tab-pane" id="pane-2" style="display: none;">
-                                <div class="block">
-                                    <div id="resumeContainer">
-                                        <!-- Resume will be loaded here!!! EYE -->
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end of tab 2 -->
-
-                            <!-- tab 3 -->
-                            <div class="tab-pane" id="pane-3">
-                                <div class="block">
-                                    <nav class="pagination is-centered" role="navigation" aria-label="pagination">
-                                        <a class="pagination-previous" id="prev-page">
-                                            <i class="fas fa-chevron-left me-2"></i> Previous
-                                        </a>
-                                        <a class="pagination-next" id="next-page">
-                                            Next <i class="fas fa-chevron-right ms-2"></i>
-                                        </a>
-                                        <ul class="pagination-list" id="pagination-list">
-                                            <!-- The page numbers will be inserted here -->
-                                        </ul>
-                                    </nav>
-                                    
-                                    <div class="fixed-grid has-2-cols has-1-cols-mobile">
-                                        <div id="modal-container" class="grid">
-                                            <!-- The modals will be inserted here!!! EYE -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end of tab 3 -->
-
-                        </div>
-                        <!-- end content of each tab-->
-                    </div>
-                    <!-- end card content-->
-                </div>
-                <!-- end card-->
-            </div>
-        </div>
-        <!-- end of 2nd column -->
+    <div class="wrap">
+      <ul class="stats">
+        <li><strong>5+</strong><span>years with ROS 1 &amp; ROS 2</span></li>
+        <li><strong>5</strong><span>robot projects, sim to real</span></li>
+        <li><strong>2,000+</strong><span>engineering students trained</span></li>
+        <li><strong>1st</strong><span>International Startup Competition</span></li>
+      </ul>
     </div>
-    <!-- end of columns -->
+  </section>
 
-    <!-- Load the Scripts!!! -->
-    <script src="js/loadProfile.js"></script>
-    <script src="js/tabs.js"></script>
-    <script src="js/loadAbout.js"></script>
-    <script src="js/loadResume.js"></script>
-    <script src="js/timelineToggle.js"></script>
-    
-    <!-- Main Script -->
-    <script src="js/main.js"></script>
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Projects</p>
+        <h2>Robots I've built</h2>
+        <p class="section-sub">Short loops of each robot — open a project for the architecture, full video and code.</p>
+      </div>
+      <div class="filters" role="tablist" aria-label="Filter projects">
+        <button class="chip is-on" data-filter="all">All</button>
+        <button class="chip" data-filter="real">Real robot</button>
+        <button class="chip" data-filter="sim">Simulation</button>
+        <button class="chip" data-filter="lead">I led it</button>
+      </div>
+      <div class="grid" id="project-grid"></div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section section-alt">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Experience</p>
+        <h2>Where I've worked</h2>
+      </div>
+      <ol class="timeline">
+        <li>
+          <div class="tl-date">2024 — Present</div>
+          <div class="tl-body">
+            <h3>Founder &amp; CEO · <a href="https://kalmanrobotics.io" target="_blank" rel="noopener">Kalman Robotics</a> <span class="muted">(formerly RoboSkills)</span></h3>
+            <ul>
+              <li>Designed the ROS 2 software stack of the Kalman educational robot kit: bringup, URDF, Gazebo simulation, custom interfaces, IMU, telemetry and teleoperation.</li>
+              <li>Leading <b>Kalman Lab</b>, a browser-based ROS 2 lab: one Docker container per student with VS Code, terminal and a remote desktop running Gazebo and RViz.</li>
+              <li>Built Gazebo simulations of mobile robots (Kalman Nexus, TortoiseBot) and produced video courses on ROS 2, Linux, URDF and CMake.</li>
+              <li>Technical advisor on robotics theses (AgroBot, UV disinfection robot) and on LeonardoBot for Smart Painter.</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="tl-date">Mar 2023 — Oct 2023</div>
+          <div class="tl-body">
+            <h3>Head of Robotics Development · Plural Soft</h3>
+            <ul>
+              <li>Led development of a forklift-type autonomous mobile robot prototype for warehouse logistics.</li>
+              <li>Robot software in ROS 2 (Galactic), validated in Gazebo and integrated with the hardware.</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="tl-date">Jan 2021 — Feb 2023</div>
+          <div class="tl-body">
+            <h3>Head of Robotics Development &amp; Innovation · Ruway Tec</h3>
+            <ul>
+              <li>Autonomous navigation for Leo Rover and MecanumBot platforms in ROS 1 and ROS 2, with Gazebo simulation.</li>
+              <li>Industry 4.0 projects for mining: laser drilling-pattern projector (patent pending), biometric system, haul-truck tracking software.</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Skills</p>
+        <h2>What I work with</h2>
+      </div>
+      <div class="skills">
+        <div class="skill-card">
+          <h3>ROS &amp; autonomy</h3>
+          <p class="tags"><span>ROS 2 Humble</span><span>ROS 1</span><span>Nav2</span><span>BehaviorTree.CPP</span><span>Cartographer</span><span>AMCL</span><span>TF2</span><span>URDF</span><span>micro-ROS</span></p>
+        </div>
+        <div class="skill-card">
+          <h3>Simulation</h3>
+          <p class="tags"><span>Gazebo Classic</span><span>Gazebo Sim</span><span>RViz</span><span>ros2_control</span><span>mecanum &amp; diff-drive</span></p>
+        </div>
+        <div class="skill-card">
+          <h3>Perception &amp; estimation</h3>
+          <p class="tags"><span>LiDAR</span><span>Intel RealSense</span><span>YOLO</span><span>Kalman filters</span><span>sensor fusion</span><span>SLAM</span></p>
+        </div>
+        <div class="skill-card">
+          <h3>Software &amp; DevOps</h3>
+          <p class="tags"><span>C++</span><span>Python</span><span>CMake</span><span>Linux</span><span>Docker</span><span>Jenkins CI</span><span>Git</span><span>Vue.js</span></p>
+        </div>
+        <div class="skill-card">
+          <h3>Embedded &amp; hardware</h3>
+          <p class="tags"><span>Jetson Nano</span><span>Raspberry Pi</span><span>STM32</span><span>ESP32</span><span>PIC</span></p>
+        </div>
+        <div class="skill-card">
+          <h3>Education &amp; certifications</h3>
+          <p class="small">B.Sc. Mechatronics Engineering — UNI, Peru (2022)<br>
+          Robotics Developer Masterclass — The Construct (2024)<br>
+          Instructor, ROS programs — OTI UNI (2025)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <div class="wrap contact-inner">
+      <h2>Let's build something that moves.</h2>
+      <p class="section-sub">Open to remote ROS 2 / robotics software roles and collaborations.</p>
+      <div class="cta cta-center">
+        <a class="btn btn-primary" href="mailto:alaurao@uni.pe">alaurao@uni.pe</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/brayan-laura/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn-ghost" href="https://github.com/morg1207" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">© <span id="year"></span> Brayan Laura · Huancayo, Peru</div>
+</footer>
+
+<dialog id="project-dialog" aria-labelledby="dlg-title">
+  <div class="dlg-head">
+    <h2 id="dlg-title"></h2>
+    <button class="icon-btn" id="dlg-close" aria-label="Close">
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M18.3 5.71 12 12.01l-6.3-6.3-1.41 1.41 6.3 6.3-6.3 6.3 1.41 1.41 6.3-6.3 6.3 6.3 1.41-1.41-6.3-6.3 6.3-6.3z"/></svg>
+    </button>
+  </div>
+  <article class="dlg-body md" id="dlg-body"></article>
+</dialog>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+<script type="module" src="js/site.js"></script>
 </body>
-
 </html>

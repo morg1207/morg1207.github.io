@@ -19,7 +19,7 @@ I designed and implemented the complete autonomous operation system, focusing on
 - **Platform Control:** Integration and control of existing lifting mechanism
 
 ### Web Application Layer
-- **Frontend:** React.js-based dashboard for task management
+- **Frontend:** Vue.js dashboard for task management ([webpage_rb1_warehouse](https://github.com/morg1207/webpage_rb1_warehouse))
 - **Backend:** ROSBridge integration for robot-web communication
 - **Features:** Real-time monitoring, task initiation, and status reporting
 
@@ -57,14 +57,13 @@ The behavior tree system consists of two main components:
 *Primary behavior tree structure showing the main decision-making workflow*
 
 #### Auxiliary Behavior Tree Nodes
-<img src="/content/rb1-robot/pictures/behavior_tree_nodes_auxiliary.png" alt="Auxiliary Behavior Tree Nodes" width="600" style="border: 1px solid #ccc; border-radius: 5px;"/>
+<img src="content/rb1-robot/pictures/behavior_tree_nodes_auxiliary.png" alt="Auxiliary Behavior Tree Nodes" width="600" style="border: 1px solid #ccc; border-radius: 5px;"/>
 
 *Supporting nodes and auxiliary behaviors that complement the main tree structure*
 
 ## Repository Features
 - Complete ROS 2 package structure
 - Behavior tree XML definitions and nodes
-- Web application source code (React + ROSBridge)
 - Documentation and setup instructions
 - Simulation environment configurations
 - Example launch files and test scenarios

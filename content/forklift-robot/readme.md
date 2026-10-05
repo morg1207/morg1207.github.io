@@ -1,7 +1,7 @@
-# Autonomous Forklift Robot
+# RRbot — Autonomous Forklift Robot
 
 ## Project Overview
-Leonardo is an autonomous forklift robot prototype designed to automate warehouse logistics. Its primary task is to autonomously locate, pick up, and unload pallets onto designated shelves, streamlining material handling operations without human intervention.
+RRbot is a scaled autonomous forklift robot prototype designed to automate warehouse logistics. Its primary task is to autonomously locate, pick up, and unload pallets onto designated shelves, streamlining material handling operations without human intervention.
 
 ## My Role: Project Lead
 As the Project Lead, I was responsible for the complete end-to-end development and integration of the system. My key contributions included:
@@ -41,9 +41,10 @@ The project has successfully progressed from simulation to a fully functional re
 ---
 ### Architecture
 
-<img src="content/forklift-robot/pictures/architecture.png" alt="Autonomous Forklift Robot" width="600"/>
+<img src="content/forklift-robot/pictures/architecture.png" alt="RRbot architecture" width="600"/>
+
 ---
 
-### Diagramt components
+### Component diagram
 
 <img src="content/forklift-robot/pictures/diagramt_componets.png" alt="Autonomous Forklift Robot" width="600"/>
