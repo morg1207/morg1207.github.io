@@ -30,7 +30,7 @@ export var cellModalData = [
     {
         imageUrl: 'content/rb1-robot/pictures/rb1.gif',
         projectName: 'RB1 Robot',
-        extraContent: 'RB1 is a versatile autonomous robot designed for various tasks, including delivery and surveillance.',
+        extraContent: 'Nav2 + Behavior Trees mission tested on the real robot: finds, lifts and delivers warehouse shelves.',
         mdFile: 'content/rb1-robot/readme.md',
         id: 4
     },
