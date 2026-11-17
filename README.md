@@ -4,6 +4,10 @@ Personal robotics portfolio of **Brayan Laura** — live at **https://morg1207.g
 
 Static site, no build step: `index.html` + `css/site.css` + `js/site.js`.
 
+Sections: hero, selected work, **Kalman Robotics**, experience, skills, contact.
+The theme is light by default; the header toggle writes `data-theme` to `localStorage`.
+All colours live as tokens in the `:root` / `:root[data-theme="dark"]` blocks of `css/site.css`.
+
 ## Add a project
 
 1. Create `content/<project>/readme.md` (the detail page, Markdown; videos with `<video>`).

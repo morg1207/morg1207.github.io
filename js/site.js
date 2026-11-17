@@ -107,8 +107,7 @@ if (projects.some((p) => p.id === hash)) openProject(hash);
 // Theme toggle
 document.getElementById('theme-toggle').addEventListener('click', () => {
   const root = document.documentElement;
-  const dark = root.dataset.theme ? root.dataset.theme === 'dark' : !matchMedia('(prefers-color-scheme: light)').matches;
-  root.dataset.theme = dark ? 'light' : 'dark';
+  root.dataset.theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
   try { localStorage.setItem('theme', root.dataset.theme); } catch (e) {}
 });
 
